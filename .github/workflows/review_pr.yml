@@ -13,7 +13,6 @@ jobs:
 
     steps:
       - name: PR Review
-        uses: team-telnyx/reviewpr@main
+        uses: team-telnyx/reviewpr@v0.0.2
         with:
-          telnyxai_token: ${{ secrets.TELNYXAI_TOKEN }}
-          model_name: 'meta-llama/Meta-Llama-3.1-8B-Instruct'
+          telnyx_api_key: ${{ secrets.TELNYXAI_TOKEN }}
